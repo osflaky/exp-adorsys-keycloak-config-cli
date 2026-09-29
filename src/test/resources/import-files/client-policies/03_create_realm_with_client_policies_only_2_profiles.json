@@ -1,0 +1,34 @@
+{
+"enabled": true,
+"realm": "realmWithClientPolicies",
+"clientProfiles": {
+"profiles": [
+{
+"name": "acme-client-profile-1",
+"description": "",
+"executors": [
+{
+"executor": "secure-session",
+"configuration": {
+"clientSessionIdleTimeout": 7200,
+"clientOfflineSessionIdleTimeout": 172800
+}
+}
+]
+},
+{
+"name": "acme-client-profile-2",
+"description": "",
+"executors": [
+{
+"executor": "secure-session",
+"configuration": {
+"clientSessionIdleTimeout": 3600,
+"clientOfflineSessionIdleTimeout": 86400
+}
+}
+]
+}
+]
+}
+}

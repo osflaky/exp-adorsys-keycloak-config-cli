@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "realm": "realmWithClientPolicies",
+  "clientProfiles": {
+    "profiles": [
+      {
+        "name": "acme-client-profile",
+        "description": "",
+        "executors": [
+          {
+            "executor": "secure-session",
+            "configuration": {
+              "clientSessionIdleTimeout": 7200,
+              "clientOfflineSessionIdleTimeout": 172800
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
